@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Théo Souza | Desenvolvedor Web Full Stack</title>
+    <meta name="description"
+        content="Portfólio de Théo Souza, estudante de Desenvolvimento de Sistemas no SENAI, com foco em desenvolvimento web full stack.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/duotone/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="progress" id="progress"></div>
+
+    <header class="nav">
+        <div class="wrap nav-in">
+            <a class="logo" href="#inicio"><i class="ph-duotone ph-brackets-angle"></i><span>theo<b>.dev</b></span></a>
+            <nav id="menu" aria-label="Navegação principal">
+                <a href="#sobre"><i class="ph-duotone ph-user"></i>Sobre</a>
+                <a href="#trajetoria"><i class="ph-duotone ph-graduation-cap"></i>Trajetória</a>
+                <a href="#profissao"><i class="ph-duotone ph-briefcase"></i>Profissão</a>
+                <a href="#objetivos"><i class="ph-duotone ph-target"></i>Objetivos</a>
+                <a href="#habilidades"><i class="ph-duotone ph-lightning"></i>Habilidades</a>
+                <a href="#tecnologia"><i class="ph-duotone ph-cpu"></i>Tecnologia</a>
+                <a href="#projetos"><i class="ph-duotone ph-folder-open"></i>Projetos</a>
+            </nav>
+            <button class="icon-btn" id="themeBtn" aria-label="Alternar tema claro/escuro"><i class="ph-duotone ph-moon"
+                    id="themeIcon"></i></button>
+            <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><i
+                    class="ph-duotone ph-list"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="wrap hero-in">
+                <div class="hero-text">
+                    <span class="badge"><i class="dot"></i>Aberto a estágios e projetos</span>
+                    <h1>Olá, eu sou o <em>Théo Souza</em></h1>
+                    <p class="role">Desenvolvedor Web Full Stack em formação</p>
+                    <p class="lead">Estudante de Desenvolvimento de Sistemas no SENAI. Transformo ideias em aplicações
+                        modernas, organizadas e escaláveis, e gosto de resolver problemas reais com código.</p>
+                    <div class="cta">
+                        <a class="btn" href="#projetos"><i class="ph-duotone ph-rocket-launch"></i>Ver projetos</a>
+                        <a class="btn ghost" href="https://github.com/theosouzaa" target="_blank" rel="noopener"><i
+                                class="ph-duotone ph-github-logo"></i>GitHub</a>
+                    </div>
+                    <div class="stats">
+                        <div><b>2025</b><small>início do curso</small></div>
+                        <div><b id="repoCount" data-count="0">0</b><small>repositórios no GitHub</small></div>
+                        <div><b data-count="3">0</b><small>plataformas no TCC</small></div>
+                    </div>
+                </div>
+                <div class="code-card" aria-hidden="true">
+                    <div class="code-top"><i></i><i></i><i></i><span>theo.js</span></div>
+                    <pre><span class="k">const</span> <span class="v">theo</span> = {
+  <span class="p">curso</span>: <span class="s">"Téc. Desenvolvimento de Sistemas"</span>,
+  <span class="p">escola</span>: <span class="s">"SENAI"</span>,
+  <span class="p">foco</span>: <span class="s">"Full Stack"</span>,
+  <span class="p">stack</span>: [<span class="s">"Laravel"</span>, <span class="s">"Flutter"</span>, <span class="s">"MySQL"</span>],
+  <span class="p">tcc</span>: <span class="s">"GeoSync"</span>,
+  <span class="p">buscando</span>: <span class="s">"estágio"</span>
+};</pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. SOBRE -->
+        <section id="sobre">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">01 · Apresentação</span>
+                    <h2>Quem sou eu</h2>
+                </header>
+                <div class="about">
+                    <div class="about-text">
+                        <p>Sou o Théo, estudante do curso Técnico em Desenvolvimento de Sistemas no SENAI, com foco em
+                            <strong>desenvolvimento web full stack</strong>. Gosto de transformar ideias em aplicações
+                            modernas, organizadas e escaláveis.</p>
+                        <p>Atualmente estou aprofundando meus estudos em <strong>Laravel, APIs REST e Flutter</strong>,
+                            e aprendendo boas práticas como Clean Code, MVC, versionamento com Git e metodologias ágeis.
+                            Estou aberto a estágios, projetos colaborativos e oportunidades na área.</p>
+                    </div>
+                    <div class="facts">
+                        <div><i class="ph-duotone ph-graduation-cap"></i><span><small>Formação</small>Técnico em
+                                Desenvolvimento de Sistemas</span></div>
+                        <div><i class="ph-duotone ph-buildings"></i><span><small>Instituição</small>SENAI</span></div>
+                        <div><i class="ph-duotone ph-calendar-check"></i><span><small>Início</small>2025</span></div>
+                        <div><i class="ph-duotone ph-compass"></i><span><small>Foco</small>Web Full Stack e
+                                Mobile</span></div>
+                    </div>
+                </div>
+                <div class="icards">
+                    <div class="icard"><i class="ph-duotone ph-code"></i><b>Programação</b><small>Back-end, front-end e
+                            mobile.</small></div>
+                    <div class="icard"><i
+                            class="ph-duotone ph-map-pin-area"></i><b>Geolocalização</b><small>Rastreamento e mapas no
+                            TCC.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-broadcast"></i><b>IoT</b><small>Dispositivos integrados à
+                            web.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-broom"></i><b>Código limpo</b><small>Clean Code, MVC e
+                            boas práticas.</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. TRAJETÓRIA -->
+        <section id="trajetoria" class="alt">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">02 · Trajetória acadêmica</span>
+                    <h2>Minha formação</h2>
+                    <p>Técnico em Desenvolvimento de Sistemas no SENAI, iniciado em 2025. Clique em cada etapa para ver
+                        os detalhes.</p>
+                </header>
+                <div class="timeline" id="timeline"></div>
+                <h3 class="sub-h"><i class="ph-duotone ph-stack"></i>Tecnologias e conhecimentos adquiridos</h3>
+                <div id="senaiTech" class="tech-groups"></div>
+            </div>
+        </section>
+
+        <!-- 3. PROFISSÃO -->
+        <section id="profissao">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">03 · Profissão desejada</span>
+                    <h2>Desenvolvedor Web Full Stack</h2>
+                </header>
+                <div class="split">
+                    <div class="panel">
+                        <h4><i class="ph-duotone ph-question"></i>Por que escolhi essa carreira</h4>
+                        <p>Escolhi desenvolvimento de software porque ele me permite criar, do zero, soluções que
+                            resolvem problemas reais. No TCC, vi um sistema de rastreamento sair do papel e reunir web,
+                            aplicativo e IoT. Foi aí que percebi que quero trabalhar construindo produtos completos, do
+                            banco de dados à tela do usuário.</p>
+                    </div>
+                    <div class="panel">
+                        <h4><i class="ph-duotone ph-list-checks"></i>O que esse profissional faz</h4>
+                        <ul class="ticks">
+                            <li>Desenvolve sistemas web e aplicativos mobile</li>
+                            <li>Cria e consome APIs REST</li>
+                            <li>Modela e organiza bancos de dados</li>
+                            <li>Testa, mantém e evolui o software</li>
+                            <li>Trabalha em equipe com metodologias ágeis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. OBJETIVOS -->
+        <section id="objetivos" class="alt">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">04 · Objetivos profissionais</span>
+                    <h2>Para onde quero ir</h2>
+                </header>
+                <div class="steps">
+                    <div class="goal"><span class="n">01</span><i class="ph-duotone ph-flag-checkered"></i>
+                        <h4>Curto prazo</h4>
+                        <p>Concluir o curso técnico, apresentar o TCC GeoSync e conquistar o primeiro estágio na área.
+                        </p>
+                    </div>
+                    <div class="goal"><span class="n">02</span><i class="ph-duotone ph-graduation-cap"></i>
+                        <h4>Médio prazo</h4>
+                        <p>Ingressar em uma faculdade de tecnologia (como ADS, Ciência da Computação ou Engenharia de
+                            Software) e fazer cursos de Laravel, Flutter e computação em nuvem.</p>
+                    </div>
+                    <div class="goal"><span class="n">03</span><i class="ph-duotone ph-rocket-launch"></i>
+                        <h4>Longo prazo</h4>
+                        <p>Atuar como desenvolvedor full stack em uma empresa de tecnologia, criando soluções escaláveis
+                            e que gerem impacto real.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HABILIDADES -->
+        <section id="habilidades">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">05 · Habilidades e interesses</span>
+                    <h2>O que sei fazer</h2>
+                </header>
+                <div class="two-col">
+                    <div>
+                        <h3 class="sub-h"><i class="ph-duotone ph-terminal-window"></i>Técnicas</h3>
+                        <div class="skills" id="skills"></div>
+                    </div>
+                    <div>
+                        <h3 class="sub-h"><i class="ph-duotone ph-users-three"></i>Comportamentais</h3>
+                        <div class="icards two" id="soft"></div>
+                        <h3 class="sub-h"><i class="ph-duotone ph-books"></i>Gosto de estudar</h3>
+                        <div class="chips" id="interests"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TECNOLOGIA NA PROFISSÃO -->
+        <section id="tecnologia" class="alt">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">06 · Tecnologia na profissão</span>
+                    <h2>Como a tecnologia me ajuda a crescer</h2>
+                    <p>Para um desenvolvedor, a tecnologia é ao mesmo tempo o produto e a ferramenta de trabalho.</p>
+                </header>
+                <div class="icards">
+                    <div class="icard"><i class="ph-duotone ph-robot"></i><b>Inteligência Artificial</b><small>Apoio
+                            para escrever, revisar e entender código mais rápido, sem abrir mão de aprender.</small>
+                    </div>
+                    <div class="icard"><i class="ph-duotone ph-git-branch"></i><b>Git e GitHub</b><small>Versionamento,
+                            trabalho em equipe e portfólio público.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-broadcast"></i><b>IoT e dados</b><small>Dispositivos que
+                            enviam informações reais para o sistema, como no GeoSync.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-lock-key"></i><b>Segurança</b><small>Autenticação, login
+                            social e biometria para proteger os usuários.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-wifi-slash"></i><b>Modo offline</b><small>Apps que
+                            continuam úteis sem internet e sincronizam depois.</small></div>
+                    <div class="icard"><i class="ph-duotone ph-gear-six"></i><b>Automação</b><small>Filas e tarefas
+                            assíncronas para processos que rodam sozinhos.</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <div class="wrap">
+                <header class="sec-head"><span class="eyebrow">Portfólio · Projetos</span>
+                    <h2>Meus projetos</h2>
+                </header>
+
+                <article class="featured" id="tcc">
+                    <div class="f-head">
+                        <span class="ribbon"><i class="ph-duotone ph-star"></i>Projeto TCC</span>
+                        <span class="f-meta"><i class="ph-duotone ph-users-three"></i>Projeto em equipe · 2026</span>
+                    </div>
+                    <h3>GeoSync</h3>
+                    <p class="f-lead">Plataforma de rastreamento e logística que integra um módulo IoT a uma aplicação
+                        web em Laravel 12 e a um aplicativo mobile em Flutter, para coletar, sincronizar e visualizar
+                        dados de localização de remessas e entregas.</p>
+
+                    <div class="f-grid">
+                        <div class="f-box"><i class="ph-duotone ph-browser"></i>
+                            <h4>Plataforma web</h4>
+                            <ul>
+                                <li>Laravel 12 com PHP e Vite</li>
+                                <li>Autenticação com Laravel Sanctum</li>
+                                <li>Login social com Laravel Socialite</li>
+                                <li>Processamento assíncrono com filas</li>
+                            </ul>
+                        </div>
+                        <div class="f-box"><i class="ph-duotone ph-device-mobile"></i>
+                            <h4>Aplicativo mobile</h4>
+                            <ul>
+                                <li>Flutter com sincronização offline</li>
+                                <li>Localização em segundo plano</li>
+                                <li>QR Code e bloqueio biométrico</li>
+                                <li>Rotas otimizadas e assinatura digital</li>
+                            </ul>
+                        </div>
+                        <div class="f-box"><i class="ph-duotone ph-broadcast"></i>
+                            <h4>Módulo IoT</h4>
+                            <ul>
+                                <li>Coleta dados de localização</li>
+                                <li>Integra com a plataforma de gestão</li>
+                                <li>Dados exportáveis em CSV e GeoJSON</li>
+                            </ul>
+                        </div>
+                        <div class="f-box"><i class="ph-duotone ph-database"></i>
+                            <h4>Banco de dados</h4>
+                            <ul>
+                                <li>MySQL com dump do esquema</li>
+                                <li>Dados de remessas, motoristas e clientes</li>
+                                <li>Sincronização incremental com o servidor</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4 class="mini">Tecnologias utilizadas no projeto</h4>
+                    <div class="tech-icons" id="tccTech"></div>
+                    <div class="cta">
+                        <a class="btn" href="https://github.com/theosouzaa/GeoSync" target="_blank" rel="noopener"><i
+                                class="ph-duotone ph-github-logo"></i>Ver repositório do TCC</a>
+                        <a class="btn ghost" href="https://github.com/theosouzaa/PPDM_2IDS" target="_blank"
+                            rel="noopener"><i class="ph-duotone ph-device-mobile"></i>Ver app mobile</a>
+                    </div>
+                </article>
+
+                <h3 class="sub-h"><i class="ph-duotone ph-github-logo"></i>Outros projetos do GitHub</h3>
+                <div class="grid" id="repos"></div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="alt">
+            <div class="wrap contact">
+                <i class="ph-duotone ph-handshake"></i>
+                <h2>Vamos construir algo juntos?</h2>
+                <p>Estou em busca de estágio e de projetos colaborativos na área de desenvolvimento.</p>
+                <div class="cta center">
+                    <a class="btn" href="https://github.com/theosouzaa" target="_blank" rel="noopener"><i
+                            class="ph-duotone ph-github-logo"></i>github.com/theosouzaa</a>
+                    <!-- Para adicionar e-mail ou LinkedIn, copie um botão acima e troque o link -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap foot-in">
+            <span>© 2026 Théo Souza · Técnico em Desenvolvimento de Sistemas, SENAI</span>
+            <span>Feito com HTML, CSS e JavaScript</span>
+        </div>
+    </footer>
+    <button class="to-top" id="toTop" aria-label="Voltar ao topo"><i class="ph-duotone ph-arrow-up"></i></button>
+</body>
+
+</html>
